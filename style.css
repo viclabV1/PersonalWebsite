@@ -9,10 +9,11 @@ body{
 }
 
 .container{
-  width: 400px;
+  width: 300px;
   display: flex;
   justify-content: start;
-  padding-left: 137px;
+  box-sizing: border-box;
+  padding-left: 5%;
   
 }
 
