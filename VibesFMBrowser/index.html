@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | VibesFM</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/VibesFMBrowser.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/VibesFMBrowser.data.gz",
+        frameworkUrl: "Build/VibesFMBrowser.framework.js.gz",
+        codeUrl: "Build/VibesFMBrowser.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Lmao there is no company",
+        productName: "VibesFM",
+        productVersion: "0.2",
+      });
+    </script>
+  </body>
+</html>

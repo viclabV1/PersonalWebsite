@@ -89,4 +89,8 @@ function animate(){
   //composer.render()
   requestAnimationFrame(animate);
 }
+
 animate();
+setTimeout(function(){
+  document.querySelector("#cover").style.visibility = "hidden";
+},250);

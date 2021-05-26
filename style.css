@@ -3,6 +3,61 @@
   font-family: 'VT323', monospace;
 }
 
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 400px;
+  display: flex;
+  justify-content: start;
+  padding-left: 137px;
+  
+}
+
+#projects-header{
+  position: relative;
+  top: 4%;
+}
+
+#connections-header{
+  position: relative;
+  top: 9%;
+}
+
+#cover {
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  top:0; 
+  left: 0; 
+  background: #000; 
+  z-index:9999; 
+  font-size: 60px; 
+  text-align: center;
+  padding-top: 200px; 
+  color: #fff;
+}
+
+#name{
+  display: flex;
+  justify-content: center;
+}
+
+#projects{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-left: 29px;
+}
+
+#connections{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
 #background-stars{
   position: fixed;
   top: 0;
