@@ -1,0 +1,17 @@
+*{
+  color: white;
+  font-family: 'VT323', monospace;
+}
+
+#background-stars{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#unity-canvas{
+  z-index: 0;
+}
+
+
