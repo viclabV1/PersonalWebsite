@@ -94,3 +94,7 @@ animate();
 setTimeout(function(){
   document.querySelector("#cover").style.visibility = "hidden";
 },250);
+//97
+//98
+//99
+//100!!!!!
