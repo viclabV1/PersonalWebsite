@@ -1,12 +1,10 @@
 import './style.css'
 
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { AmbientLight } from 'three';
-//Didn't end up implementing these, might do so later
-import {EffectComposer} from 'three/examples/jsm/postprocessing/EffectComposer';
-import {GlitchPass} from 'three/examples/jsm/postprocessing/GlitchPass';
-import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass';
+import * as THREE from './node_modules/three';
+import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls';
+import { AmbientLight } from './node_modules/three';
+import {EffectComposer} from './node_modules/three/examples/jsm/postprocessing/EffectComposer';
+
 
 
 const scene = new THREE.Scene();
