@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | VibesFM</title>
+  </head>
+  <!---<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Space+Mono&family=VT323&display=swap" rel="stylesheet">--->
+  <div style="  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  top:0; 
+  left: 0; 
+  background: #000; 
+  z-index:-1; 
+  font-size: 60px; 
+  text-align: center;
+  padding-top: 200px;"></div>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script type="module"src="Build/VibesFMBrowser.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/VibesFMBrowser.data.gz",
+        frameworkUrl: "Build/VibesFMBrowser.framework.js.gz",
+        codeUrl: "Build/VibesFMBrowser.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Lmao there is no company",
+        productName: "VibesFM",
+        productVersion: "0.2",
+      });
+    </script>
+    <h2 style="color: white; font-family: Arial, Helvetica, sans-serif">left click to increase freqency, decrease click to decrease</h2>
+    <a href="https://play.google.com/store/apps/details?id=com.Lmaothereisnocompany.VibesFM"><h2 style="color: white; font-family: Arial, Helvetica, sans-serif">this game</h2></a><h2 style="color: white; font-family: Arial, Helvetica, sans-serif"> is also available on android if you're on mobile, although there were some bugs that couldn't be ironed out due to the fact that I lost the keystore smh</h2>
+  </body>
+</html>
