@@ -9,10 +9,15 @@ body{
   justify-content: center;
 }
 
+ul{
+  display: block;
+  list-style: none;
+}
+
 .container{
-  width: 300px;
+  width: 350px;
   display: flex;
-  justify-content: start;
+  justify-content: safe;
   box-sizing: border-box;
   padding-left: 5%;
   
@@ -20,11 +25,14 @@ body{
 
 #projects-header{
   position: relative;
+  justify-content: left;
+  right: center;
   top: 4%;
 }
 
 #connections-header{
-  position: relative;
+  right: center;
+  left: 10%;
   top: 9%;
 }
 
@@ -51,7 +59,7 @@ body{
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-left: 29px;
+  padding-left: 50px;
 }
 
 #connections{
