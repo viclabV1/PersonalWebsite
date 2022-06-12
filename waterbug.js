@@ -1,8 +1,9 @@
 import './GeneticAlgoStyles.css'
 import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { Vector3 } from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { Vector3 } from 'three'
+
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 300);
@@ -25,7 +26,7 @@ scene.add(light);
 
 //scene.add(goal);
 
-loader.load('./assets/giant-water-bug-kirkaldyia-deyrolli/source/Q10523-2all.gltf',
+loader.load('/giant-water-bug-kirkaldyia-deyrolli/source/Q10523-2all.gltf',
 	function(gltf){
 		gltf.scene.position.set(10,10,10);
 		scene.add(gltf.scene);

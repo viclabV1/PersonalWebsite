@@ -6,8 +6,9 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'geneticAlgo.html')
-      }
-    }
+        nested: resolve(__dirname, 'geneticAlgo.html'),
+        nested: resolve(__dirname, 'waterbug.html')
+      },
+    },
   }
 })
