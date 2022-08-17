@@ -18,12 +18,12 @@
   padding-top: 200px;"></div>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script type="module"src="Build/VibesFMBrowser.loader.js"></script>
+    <script type="module" src="/Build/VibesFMBrowser.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/VibesFMBrowser.data.gz",
-        frameworkUrl: "Build/VibesFMBrowser.framework.js.gz",
-        codeUrl: "Build/VibesFMBrowser.wasm.gz",
+        dataUrl: "/Build/VibesFMBrowser.data.gz",
+        frameworkUrl: "/Build/VibesFMBrowser.framework.js.gz",
+        codeUrl: "/Build/VibesFMBrowser.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lmao there is no company",
         productName: "VibesFM",

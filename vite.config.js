@@ -5,9 +5,9 @@ module.exports = defineConfig({
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'geneticAlgo.html'),
-        nested: resolve(__dirname, 'waterbug.html')
+        portfolio: resolve(__dirname, 'index.html'),
+        genetic: resolve(__dirname, 'geneticAlgo.html'),
+        bugpage: resolve(__dirname, 'waterbug.html')
       },
     },
   }
