@@ -12,7 +12,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const light = new THREE.AmbientLight(0XFFFFFF);
 const loader = new GLTFLoader();
 
-camera.position.set(40,20,30);
+camera.position.set(20,20,20);
 camera.lookAt(new THREE.Vector3(10,10,10));
 
 renderer.setSize(window.innerWidth,window.innerHeight);
