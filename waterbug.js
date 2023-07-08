@@ -26,7 +26,7 @@ scene.add(light);
 
 //scene.add(goal);
 
-loader.load('/giant-water-bug-kirkaldyia-deyrolli/source/Q10523-2all.gltf',
+loader.load('/decimatedwaterbug/decimatedbug.glb',
 	function(gltf){
 		gltf.scene.position.set(10,10,10);
 		scene.add(gltf.scene);
