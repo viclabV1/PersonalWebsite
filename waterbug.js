@@ -30,6 +30,7 @@ scene.add(light);
 //TODO: Use DracoLoader instead
 
 
+
 // loader.load('/decimatedwaterbug/decimatedbug.glb',
 // 	function(gltf){
 // 		gltf.scene.position.set(10,10,10);
