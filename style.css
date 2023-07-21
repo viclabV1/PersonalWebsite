@@ -7,12 +7,26 @@
 body{
   display: flex;
   justify-content: center;
+  background-color: black;
+}
+
+canvas{
+  color: black;
+  width: 50%;
+  height: 100%;
 }
 
 ul{
   display: block;
   list-style: none;
 }
+
+/* .defaultCanvas{
+  width: 100%;
+  height: 100%;
+  color: #000;
+  z-index: -1;
+} */
 
 .container{
   width: 350px;
@@ -21,6 +35,12 @@ ul{
   box-sizing: border-box;
   padding-left: 5%;
   
+}
+
+#exporter-body{
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
 #projects-header{
