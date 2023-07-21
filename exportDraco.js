@@ -1,9 +1,11 @@
-//import {DracoExporter} from 'three/addons/exporters/DRACOExporter.js'
-//import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import * as THREE from three
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import {DRACOExporter} from 'three/examples/jsm/exporters/DRACOExporter'
 import './style.css'
 
-// const exporter = new DracoExporter()
-// let loader = new GLTFLoader()
+
+const exporter = new DracoExporter()
+const  loader = new GLTFLoader()
 
 // let scene = new THREE.scene()
 
