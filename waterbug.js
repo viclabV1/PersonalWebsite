@@ -27,9 +27,7 @@ scene.add(light);
 
 //scene.add(goal);
 
-//TODO: Use DracoLoader instead
-
-
+//Use DracoLoader instead
 
 // loader.load('/decimatedwaterbug/decimatedbug.glb',
 // 	function(gltf){
@@ -56,4 +54,4 @@ function animate(){
 	requestAnimationFrame(animate);
   }
   
-  animate();
+animate();
