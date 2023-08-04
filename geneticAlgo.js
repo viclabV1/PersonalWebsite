@@ -1,7 +1,7 @@
 //
 //IMPORTING
 //
-import './GeneticAlgoStyles.css'
+import './geneticAlgoStyles.css'
 import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 import { MathUtils } from 'three';
@@ -60,10 +60,14 @@ let simulationSpeed=0.08;
 //GOAL
 //
 const goalGeo = new THREE.BoxGeometry(1,1,1);
+const goalEdges = new THREE.EdgesGeometry(goalGeo);
+const goalEdgeLines = new THREE.LineSegments(goalEdges, new THREE.LineBasicMaterial( { color: 0xffffff } ) ); 
 const goalMat = new THREE.MeshStandardMaterial({color: 0XFF0000});
 const goal = new THREE.Mesh(goalGeo, goalMat);
+goalEdgeLines.position.set(20,20,20);
 goal.position.set(20,20,20);
 scene.add(goal);
+scene.add(goalEdgeLines)
 var generationDisplay=document.getElementById("domGenerationCount");
 
 //
