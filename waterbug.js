@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { Vector3 } from 'three'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 
 
 const scene = new THREE.Scene();
@@ -26,12 +27,14 @@ scene.add(light);
 
 //scene.add(goal);
 
-loader.load('/decimatedwaterbug/decimatedbug.glb',
-	function(gltf){
-		gltf.scene.position.set(10,10,10);
-		scene.add(gltf.scene);
-	}
-);
+//Use DracoLoader instead
+
+// loader.load('/decimatedwaterbug/decimatedbug.glb',
+// 	function(gltf){
+// 		gltf.scene.position.set(10,10,10);
+// 		scene.add(gltf.scene);
+// 	}
+// );
 
 
 
@@ -51,4 +54,4 @@ function animate(){
 	requestAnimationFrame(animate);
   }
   
-  animate();
+animate();
