@@ -1,0 +1,3 @@
+[submodule "GeneticAgorithmJS"]
+	path = GeneticAgorithmJS
+	url = https://github.com/viclabV1/GeneticAlgorithmJS
