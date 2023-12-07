@@ -7,7 +7,8 @@ module.exports = defineConfig({
       input: {
         portfolio: resolve(__dirname, 'index.html'),
         genetic: resolve(__dirname, 'geneticAlgo.html'),
-        bugpage: resolve(__dirname, 'waterbug.html')
+        bugpage: resolve(__dirname, 'waterbug.html'),
+        robots: resolve(__dirname, './public/robots.txt')
       },
     },
   }
