@@ -28,7 +28,7 @@ const grid = new THREE.GridHelper(100, 100);
 //creating the stars and adding them to an array
 const stars = [];
 function addStar(){
-  const starGeometry = new THREE.SphereGeometry(0.05,10,10);
+  const starGeometry = new THREE.SphereGeometry(0.025,10,10);
   const starMaterial = new THREE.MeshStandardMaterial({color: 0XFFFFFF});
   const star = new THREE.Mesh(starGeometry,starMaterial);
   const [x,y,z] = Array(3).fill().map(()=>THREE.MathUtils.randFloatSpread(100));
